@@ -3,6 +3,8 @@ import {
     StyleSheet
 } from "react-native";
 
+
+
 const styles = StyleSheet.create({
     pad: {
         flex: 1
@@ -20,6 +22,18 @@ const styles = StyleSheet.create({
         width: 50, 
         color: '#C0C0C0',
         textAlign: 'center'
+    },
+    containers: {
+        flex: 1,
+        backgroundColor: '#ddd',
+        paddingTop: 20
+    },
+    box: {
+        backgroundColor: 'red'
+    },
+    button: {
+        borderColor: 1,
+        borderWidth: 1,
     }
 });
 

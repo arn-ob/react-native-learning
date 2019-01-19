@@ -30,8 +30,14 @@ export default class Second extends React.Component {
         console.error(error);
       });
   }
+
+  check(){
+    console.log('Run');
+  }
   
   render() {
+   
+    // console.log('Run 2');
     if(this.state.isLoading){
       return(
         <View style={{flex: 1, padding: 20}}>
@@ -39,6 +45,7 @@ export default class Second extends React.Component {
         </View>
       )
     }
+    this.check();
     return (
       <ScrollView containerStyle={{padding: 10}}>
         

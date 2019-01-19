@@ -1,11 +1,15 @@
 import React from "react";
 import { FlatList, ActivityIndicator, Text, View  } from 'react-native';
+import {
+  ScrollView,
+} from 'react-native';
 import { Badge, Button, Header } from "react-native-elements";
 import Nav from './components/Nav'
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import styles from './style'
 import Second from './page/Second/Second'
 import Third from './page/Third/Third'
+import Four from './page/Four/Four'
 
 // For nav
 class HomeScreen extends React.Component {
@@ -53,7 +57,7 @@ class HomeScreen extends React.Component {
           <Button style={styles.aligns}
               raised
               icon={{ name: "cached" }}
-              title="Details"
+              title="Second"
               onPress={() => this.props.navigation.navigate('Details')}
             />
             <Button style={styles.aligns}
@@ -100,12 +104,12 @@ class DataScreen extends React.Component {
   }
 }
 
+
 const RootStack = createStackNavigator(
   {
     Home: HomeScreen,
     Details: DetailsScreen,
-    Data: DataScreen,
-    
+    Data: DataScreen
   },
   {
     initialRouteName: 'Home',
