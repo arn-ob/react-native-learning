@@ -9,7 +9,7 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import styles from './style'
 import Second from './page/Second/Second'
 import Third from './page/Third/Third'
-import Four from './page/Four/Four'
+
 
 // For nav
 class HomeScreen extends React.Component {
